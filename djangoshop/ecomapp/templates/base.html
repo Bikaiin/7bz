@@ -1,0 +1,214 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="shortcut icon" href="https://vk.com/doc83674128_489077489?hash=e2d485e981c10a9326&dl=a2182cc512032a4b03" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>7bz</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/shop-homepage.css' %}">
+
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+
+        <a class="navbar-brand" href="/"> <img class="d-block img-fluid" src="{% static 'logo1.png' %}" alt=""  href="/" style=" height:50px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item ">
+              <a class="nav-link" href="/shop">Продукция
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+
+
+
+
+             <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Производство</a>
+                  <div class="dropdown-menu">
+                    {% for Production in Productions %}
+                    <a class="dropdown-item" href="{{Production.get_absolute_url}}">{{ Production.title }}</a>
+                    {% endfor %}
+                  </div>
+             </li>
+            <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">Контакты</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/contacts">Мы на карте</a>
+                    <a class="dropdown-item" href="mailto:nfo@7bz.ru">info@7bz.ru</a>
+                    <a class="dropdown-item" href="tel:+74959716840">+7(495)971-68-40</a>
+                    <a class="dropdown-item" href="tel:+74959235693">+7(495)923-56-93</a>
+
+                  </div>
+             </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+    {%block content%}
+      <div class="row">
+
+        <div class="col-lg-3">
+
+          <h2 class="my-4">Все категории</h2>
+          <div class="list-group">
+
+              {% for category in categories %}
+              <a href="{{category.get_absolute_url}}" class="list-group-item">{{ category.name }}</a>
+              {% endfor %}
+          </div>
+
+        </div>
+        <!-- /.col-lg-3 -->
+
+        <div class="col-lg-9">
+
+          <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                {% for product in products %}
+                  {% if forloop.counter == 1 %}
+                    <div class="carousel-item active">
+
+                      <img class="d-block img-fluid" src="{{ product.image.url }}" alt="First slide" style="padding-left:125px; height:300px;">
+                      <div class="carousel-caption d-none d-md-block">
+                        <a href="{{product.get_absolute_url}}"><h2>{{ product.title }}</h2></a>
+
+                      </div>
+                    </div>
+
+                {% else %}
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="{{ product.image.url }}" alt="Second slide" style="padding-left:125px; height:300px;">
+                      <div class="carousel-caption d-none d-md-block">
+                        <a href="{{product.get_absolute_url}}"><h2>{{ product.title }}</h2></a>
+
+                      </div>
+                    </div>
+
+                {% endif %}
+                {% endfor %}
+            </div>
+            <a class="carousel-control-prev " href="#carouselExampleIndicators" role="button" data-slide="prev" >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only" >Previous</span>
+            </a>
+            <a class="carousel-control-next " href="#carouselExampleIndicators" role="button" data-slide="next" >
+              <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+              <span class="sr-only" >Next</span>
+            </a>
+          </div>
+
+          <div class="row">
+
+            {% for product in products %}
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="{{ product.image.url }}" alt="" "alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="{{product.get_absolute_url}}">{{ product.title }}</a>
+                  </h4>
+
+
+                </div>
+              </div>
+            </div>
+           {% endfor %}
+          </div>
+          <!-- /.row -->
+
+        </div>
+        <!-- /.col-lg-9 -->
+
+      </div>
+      <!-- /.row -->
+    {% endblock content%}
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 ">
+      <hr>
+      <div class="container">
+<div class="row">
+    <div class="col-12 col-md">
+    <h5>7bz</h5>
+      <p class="dropdown-item">2000-2019гг.</p>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Мы делаем</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="dropdown-item" href="#">Подарочную упаковку</a></li>
+        <li><a class="dropdown-item" href="#">КБС</a></li>
+        <li><a class="dropdown-item" href="#">Твердый переплет</a></li>
+
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Адресс</h5>
+
+      <ul class="list-unstyled text-small">
+
+        <li> <a class="dropdown-item" href="mailto:nfo@7bz.ru">Москва, 1-ый <br>кирпичный пер., 17а</a></li>
+
+
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Связаться</h5>
+      <ul class="list-unstyled text-small">
+
+        <li> <a class="dropdown-item" href="mailto:nfo@7bz.ru">info@7bz.ru</a></li>
+        <li><a class="dropdown-item" href="tel:+74959716840">+7(495)971-68-40</a></li>
+        <li><a class="dropdown-item" href="tel:+74959235693">+7(495)923-56-93</a></li>
+
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>О нас</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="dropdown-item" href="#">Быстрее</a></li>
+        <li><a class="dropdown-item" href="#">Лучшее</a></li>
+        <li><a class="dropdown-item" href="#">Дешевле</a></li>
+      </ul>
+    </div>
+  </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+
+
+  <script src="{% static 'js/jquery.js' %} "></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' %} "></script>
+
+
+
+  </body>
+
+</html>
