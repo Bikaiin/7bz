@@ -1,41 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e480b904-a6e3-4130-b4c9-0c544dd332fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/7bz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/7bz.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e480b904-a6e3-4130-b4c9-0c544dd332fd" name="Default Changelist" comment="Обновлена бд&#10;начал переверстывать">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/ecomapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoshop/ecomapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/ecomapp/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/ecomapp/migrations/0002_auto_20190120_2222.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/ecomapp/migrations/0003_delete_menu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/ecomapp/migrations/0004_production.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/ecomapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoshop/ecomapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/ecomapp/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/djangoshop/ecomapp/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/ecomapp/templates/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/djangoshop/ecomapp/templates/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/ecomapp/templates/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/djangoshop/ecomapp/templates/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/ecomapp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/djangoshop/ecomapp/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/ecomapp/templates/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/djangoshop/ecomapp/templates/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/ecomapp/templates/production.html" beforeDir="false" afterPath="$PROJECT_DIR$/djangoshop/ecomapp/templates/production.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/ecomapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoshop/ecomapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/static/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/static/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/static/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/static/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/static/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/djangoshop/static/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/static/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/static/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/static/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/static/css/shop-homepage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/static_in_dev/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/static_in_dev/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/static_in_dev/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/static_in_dev/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/static_in_dev/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/djangoshop/static_in_dev/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/static_in_dev/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/static_in_dev/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoshop/static_in_dev/css/bootstrap.min.css.map" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,9 +66,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="951" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -109,7 +76,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,11 +131,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Program Files/Git/git-bash.exe" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -204,12 +171,27 @@
       <option name="presentableId" value="Default" />
       <updated>1548279628485</updated>
     </task>
+    <task id="LOCAL-00001" summary="Обновлена бд&#10;начал переверстывать">
+      <created>1563547949791</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1563547949791</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Обновлена бд&#10;начал переверстывать">
+      <created>1563548053346</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563548053346</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17052214" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17052214" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -219,9 +201,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49966952" visible="true" weight="0.28611898" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50033045" side_tool="true" weight="0.34844193" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.49834764" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49966952" weight="0.28611898" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50165236" side_tool="true" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -232,14 +214,12 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/7bz" />
     </ignored-roots>
+    <MESSAGE value="Обновлена бд&#10;начал переверстывать" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обновлена бд&#10;начал переверстывать" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/djangoshop/static/css/bootstrap.css.map">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/djangoshop/static/css/bootstrap-grid.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/djangoshop/static/css/bootstrap.css.map" />
+    <entry file="file://$PROJECT_DIR$/djangoshop/static/css/bootstrap-grid.css" />
     <entry file="file://$PROJECT_DIR$/djangoshop/db.sqlite3">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -285,13 +265,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/djangoshop/static/css/Новая папка/123.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/djangoshop/static/css/Новая папка/123.css" />
     <entry file="file://$PROJECT_DIR$/djangoshop/djangoshop/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1474" />
