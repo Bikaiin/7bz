@@ -1,11 +1,16 @@
 {% extends 'base.html' %}
 
 {%block content%}
+<div class="bg-primary">
+<div class="container">
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mt-4 mx-auto text-center ">
   <h1 class="display-4">Типография "7БЦ"</h1>
     <h3 >предлагает продукцию:</h3>
 </div>
-    <div class="col-lg-12">
+</div>
+</div>
+<div class="container">
+<div class="col-lg-12">
 
           <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -48,9 +53,30 @@
           </div>
 
 </div>
+</div>
+<div class="container">
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mt-4 mx-auto text-left ">
+    <h3 >Подарочная и промо упаковка:</h3>
+</div>
+<div class="row ">
 
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mt-4 mx-auto text-center ">
-    <h3 >предлагает так же услуги производства:</h3>
+            {% for Production in Productions %}
+            <div class="col-lg-3 col-md-6  mb-4">
+              <div class="card h-100">
+                <a href="{{Production.get_absolute_url}}"><img class="card-img-top" src="{{ Production.image.url }}"  alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="{{Production.get_absolute_url}}">{{ Production.title }}</a>
+                  </h4>
+
+
+                </div>
+              </div>
+            </div>
+           {% endfor %}
+</div>
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mt-4 mx-auto text-left ">
+    <h3 >Рекламная продукция:</h3>
 </div>
 <div class="row ">
 
@@ -68,9 +94,136 @@
               </div>
             </div>
            {% endfor %}
-          </div>
+</div>
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mt-4 mx-auto text-left ">
+    <h3 >Услуги для типографий
+и рекламных агентств</h3>
+</div>
+<div class="row ">
+
+            {% for Production in Productions %}
+            <div class="col-lg-4 col-md-6  mb-4">
+              <div class="card h-100">
+                <a href="{{Production.get_absolute_url}}"><img class="card-img-top" src="{{ Production.image.url }}"  alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="{{Production.get_absolute_url}}">{{ Production.title }}</a>
+                  </h4>
 
 
+                </div>
+              </div>
+            </div>
+           {% endfor %}
+</div>
+    <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Как оставить заявку
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+          Вы можете оставить заявку несколькими способами:<br>
+          1)Заполнив форму внизу сайта<br>
+          2) Позвонив по телефону 8 (495) 278-00-00<br>
+          Все поступающие заявки немедленно передаются в коммерческий отдел<br>
+          и берутся в работу. Оставляя заявку, вы можете быть уверены, что ни один запрос не остается без ответа.<br>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Где забрать заказ?
+        </button>
+      </h2>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+          Вы можете самостоятельно забрать товар по адресу Санкт- Петербург, Большой Сампсониевский пр., д.60, лит.И. Помимо самовывоза, Вы можете также воспользоваться услугой «доставка». Предварительно отметив её в заказе или согласовав с персональным менеджером.</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Как передать макет в типографию?
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+      Вы можете передать нам макет одним из удобных способов:<br>
+
+1) На флэш-карте всех типов;<br>
+2) По электронной почте Вашему персональному менеджеру или общую sales@accent.su, при отправке таким способом максимальный размер вложения не должен превышать 25 Mb, иначе письмо может быть не доставлено;<br>
+3) Вы можете воспользоваться одним из файлообменников (к примеру, Яндекс.Диск), «залив» макет и отправить нам ссылку;<br>
+
+Если по каким-либо причинам Вам не подходят предложенные способы, позвоните в типографию «АКЦЕНТ» по телефону 8 (495) 278-00-00, обсудите свою задачу с менеджером. Совместно мы найдем подходящее Вам решение!<br></div>
+    </div>
+  </div>
+</div>
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mt-4 mx-auto text-left ">
+    <h3 >Остались вопросы?</h3>
+</div>
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mt-4 mx-auto text-left ">
+    <h3 >Контакты:</h3>
+</div>
+<div class="row ">
+    <div class="col-lg-6 col-md-6  mb-4 mt-4">
+        <div class="row h-100">
+            <div class="col-2 mb-1 mt-1 mr-1 ml-1">
+                <img class="sb-image-crop sb-image-crop_loaded " data-src="//s.tb.ru/uploads/defaults/3c81fca2-1fb3-4f60-aed7-7b4b43086812/3c81fca2-1fb3-4f60-aed7-7b4b43086812-1560779019868.png" src="//s.tb.ru/uploads/defaults/3c81fca2-1fb3-4f60-aed7-7b4b43086812/3c81fca2-1fb3-4f60-aed7-7b4b43086812-1560779019868.png">
+            </div>
+            <div class="col mb-1 mt-1 mr-1 ml-1">
+                <h4 class="card-title">Адрес</h4>
+                <p>г. Москва, 1-ый Кирпичый пер., 17а<br></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6  mb-4 mt-4">
+        <div class="row h-100">
+            <div class="col-2 mb-1 mt-1 mr-1 ml-1">
+                <img class="sb-image-crop sb-image-crop_loaded " data-src="//s.tb.ru/uploads/defaults/7f0e70dd-e00a-490d-8c81-cf4dcb75b13f/7f0e70dd-e00a-490d-8c81-cf4dcb75b13f-1560779020462.png" src="//s.tb.ru/uploads/defaults/7f0e70dd-e00a-490d-8c81-cf4dcb75b13f/7f0e70dd-e00a-490d-8c81-cf4dcb75b13f-1560779020462.png">
+            </div>
+            <div class="col mb-1 mt-1 mr-1 ml-1" >
+                <h4>Время работы</h4>
+                <p>Пн-Пт: 09:00-20:00<br>Сб-Вс: выходной<br></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6  mb-4 mt-4">
+        <div class="row h-100">
+            <div class="col-2 mb-1 mt-1 mr-1 ml-1">
+                <img class="sb-image-crop sb-image-crop_loaded " data-src="//s.tb.ru/uploads/defaults/7e0c7809-10e3-4e9e-9a99-be478289bf12/7e0c7809-10e3-4e9e-9a99-be478289bf12-1560779020462.png" src="//s.tb.ru/uploads/defaults/7e0c7809-10e3-4e9e-9a99-be478289bf12/7e0c7809-10e3-4e9e-9a99-be478289bf12-1560779020462.png">
+            </div>
+            <div class="col mb-1 mt-1 mr-1 ml-1">
+                <h4 class="card-title">Как проехать</h4>
+                <p>Станция метро «Семеновская» <br>автобус 83, до остановки "1-ый <br>Кирпичный переулок"<br></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6  mb-4 mt-4">
+        <div class="row h-100">
+            <div class="col-2 mb-1 mt-1 mr-1 ml-1">
+                <img class="sb-image-crop sb-image-crop_loaded " data-src="//s.tb.ru/uploads/defaults/24eefa92-33c0-4a7a-8ebe-cb61fecb2a3b/24eefa92-33c0-4a7a-8ebe-cb61fecb2a3b-1560775147217.png" src="//s.tb.ru/uploads/defaults/24eefa92-33c0-4a7a-8ebe-cb61fecb2a3b/24eefa92-33c0-4a7a-8ebe-cb61fecb2a3b-1560775147217.png">
+            </div>
+            <div class="col mb-1 mt-1 mr-1 ml-1">
+                <h4 class="card-title">Свяжитесь с нами</h4>
+                <p>+7 495 9716840<br>+7 495 9235693<br> info@7bz.ru</div></p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
 
 {%endblock content%}

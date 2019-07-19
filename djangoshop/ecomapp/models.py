@@ -6,12 +6,23 @@ from transliterate import translit
 #from django.core.urlresolvers import reverse
 from django.urls import reverse
 # Create your models here.
+def image_folder(instance, filename):
+    if hasattr(instance, 'slug'):
+        filename = instance.slug + '.' + filename.split('.')[1]
+        return "{0}/{1}".format(instance.slug, filename)
+    else:
+        filename = instance.product.slug + '.' + filename.split('.')[1]
+        return "{0}/{1}".format(instance.product.slug, filename)
+
+
+
 
 class Category(models.Model):
 
     name = models.CharField(max_length=100)
     slug = models.SlugField(blank=True)
-
+    image = models.ImageField(upload_to=image_folder, null=True, blank=True)
+    parent = models.ForeignKey('self', blank=True, null=True, on_delete=models.SET_NULL)
     def __str__(self):
         return self.name
 
@@ -30,13 +41,17 @@ def pre_save_product_slug(sender, instance, *args, **kwargs):
         slug = slugify(translit(instance.title, reversed=True))
         instance.slug = slug
 
+def pre_save_img_slug(sender, instance, *args, **kwargs):
+    if not instance.slug:
+        slug = slugify(translit(instance.product, reversed=True))
+        instance.slug = slug
+
 
 pre_save.connect(pre_save_category_slug, sender=Category)
 
 
-def image_folder(instance, filename):
-    filename = instance.slug + '.' + filename.split('.')[1]
-    return "{0}/{1}".format(instance.slug, filename)
+
+
 '''
 class ProductManager(models.Manager):
     def all(self, *arg, **kwargs):
@@ -46,10 +61,8 @@ class Product(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
     description = models.TextField()
-    image = models.ImageField(upload_to=image_folder)
-    price = models.DecimalField(max_digits=9, decimal_places=2)
-    available = models.BooleanField(default=True)
     slug = models.SlugField(blank=True)
+
 
     def __str__(self):
         return self.title
@@ -70,3 +83,18 @@ class Production(models.Model):
 
     def get_absolute_url(self):
         return reverse('production', kwargs={'production_slug': self.slug})
+
+class ProductIMG(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    view = models.CharField(max_length=100)
+    img = models.ImageField(upload_to=image_folder)
+
+    def __str__(self):
+        return '%s %s' % (self.product.title, self.view)
+    def get_absolute_url(self):
+        return reverse('ProductIMG_detail', kwargs={'ProductIMG_slug': self.product.slug})
+
+
+
+
+
