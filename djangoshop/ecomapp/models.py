@@ -3,9 +3,15 @@ from django.db import models
 from django.db.models.signals import pre_save
 from django.utils.text import slugify
 from transliterate import translit
-#from django.core.urlresolvers import reverse
 from django.urls import reverse
+from django import forms
 # Create your models here.
+PLACE_ON_PAGE = [(0, 'Not ussed'),
+                 (1, 'First'),
+                 (2, 'Second'),
+                 (3, 'Third')]
+
+
 def image_folder(instance, filename):
     if hasattr(instance, 'slug'):
         filename = instance.slug + '.' + filename.split('.')[1]
@@ -18,12 +24,12 @@ def image_folder(instance, filename):
 
 
 class Category(models.Model):
-
     name = models.CharField(max_length=100)
     slug = models.SlugField(blank=True)
     image = models.ImageField(upload_to=image_folder, null=True, blank=True)
     parent = models.ForeignKey('self', blank=True, null=True, on_delete=models.SET_NULL)
-    description = models.CharField(max_length=300, blank=True, null=True,)
+    description = models.CharField(max_length=300, blank=True, null=True)
+    place_on_page = models.IntegerField(choices=PLACE_ON_PAGE,default=0)
     def __str__(self):
         return self.name
 

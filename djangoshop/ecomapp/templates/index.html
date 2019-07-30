@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {%block content%}
 
 
@@ -119,15 +119,15 @@
 </div>
 <div class="row ">
 
-            {% for packaging in packagings %}
+            {% for item in place_on_page_1 %}
             <div class="col-lg-3 col-md-6  mb-4">
               <div class="card h-100">
-                <a href="{{packaging.get_absolute_url}}"><img class="card-img-top" src="{{ packaging.image.url }}"  alt=""></a>
+                <a href="{{item.get_absolute_url}}"><img class="card-img-top" src="{{ item.image.url }}"  alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title">
-                    <a href="{{packaging.get_absolute_url}}">{{ packaging.name }}</a>
+                    <a href="{{packaging.get_absolute_url}}">{{ item.name }}</a>
                   </h4>
-                    <p>{{packaging.description}}</p>
+                    <p>{{item.description}}</p>
 
 
                 </div>
@@ -140,15 +140,15 @@
 </div>
 <div class="row ">
 
-            {% for promo in promos %}
+            {% for item in place_on_page_2 %}
             <div class="col-lg-4 col-md-6  mb-4">
               <div class="card h-100">
-                <a href="{{promo.get_absolute_url}}"><img class="card-img-top" src="{{ promo.image.url }}"  alt=""></a>
+                <a href="{{item.get_absolute_url}}"><img class="card-img-top" src="{{ item.image.url }}"  alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title">
-                    <a href="{{promo.get_absolute_url}}ь ">{{ promo.name }}</a>
+                    <a href="{{item.get_absolute_url}}ь ">{{ item.name }}</a>
                   </h4>
-                    <p>{{promo.description}}</p>
+                    <p>{{item.description}}</p>
 
                 </div>
               </div>

@@ -5,20 +5,19 @@ import logging
 logging.basicConfig(filename="sample.log", level=logging.INFO)
 
 def index_view(request):
-    promo_category = Category.objects.get(name = "Рекламная продукция")
-    packaging = Category.objects.get(name = "коробки")
+    place_on_page_1_filter = Category.objects.get(place_on_page = "1")
+    place_on_page_2_filter = Category.objects.get(place_on_page = "2")
     Productions = Production.objects.all()
     products = Product.objects.all().filter()
-    packagings = Category.objects.all().filter(parent=packaging)
-    promos = Category.objects.all().filter(parent=promo_category)
-    logging.info(packagings[1].description)
-    logging.info(promos[1].description)
+    place_on_page_1 = Category.objects.all().filter(parent=place_on_page_1_filter)
+    place_on_page_2 = Category.objects.all().filter(parent=place_on_page_2_filter)
+
     context = {
 
         'Productions': Productions,
         'products': products,
-        'promos': promos,
-        'packagings': packagings
+        'place_on_page_1': place_on_page_1,
+        'place_on_page_2': place_on_page_2
     }
 
     return render(request, 'index.html', context)
