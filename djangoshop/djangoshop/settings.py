@@ -25,7 +25,7 @@ SECRET_KEY = 'u(k&^k6cp!$6s22a(9r!@tn^bb&2fuh^-pcliwi#0eo5pi6z_9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['gringaut.pythonanywhere.com']
 
 
 # Application definition
