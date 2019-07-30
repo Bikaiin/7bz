@@ -5,13 +5,20 @@ import logging
 logging.basicConfig(filename="sample.log", level=logging.INFO)
 
 def index_view(request):
-
+    promo_category = Category.objects.get(name = "Рекламная продукция")
+    packaging = Category.objects.get(name = "коробки")
     Productions = Production.objects.all()
     products = Product.objects.all().filter()
+    packagings = Category.objects.all().filter(parent=packaging)
+    promos = Category.objects.all().filter(parent=promo_category)
+    logging.info(packagings[1].description)
+    logging.info(promos[1].description)
     context = {
 
         'Productions': Productions,
-        'products': products
+        'products': products,
+        'promos': promos,
+        'packagings': packagings
     }
 
     return render(request, 'index.html', context)
@@ -34,6 +41,7 @@ def base_view(request):
 def product_view(request, product_slug):
     Productions = Production.objects.all()
     product = Product.objects.get(slug=product_slug)
+
     Imgs = ProductIMG.objects.filter(product=product)
     context = {
         'product': product,
@@ -58,7 +66,6 @@ def production_view(request, production_slug):
 def category_view(request, category_slug):
     Productions = Production.objects.all()
     all_category = Category.objects.all()
-    logging.info(1)
     category = Category.objects.get(slug=category_slug)
     products_of_category = Product.objects.all().filter(category=category)
     for product in products_of_category:

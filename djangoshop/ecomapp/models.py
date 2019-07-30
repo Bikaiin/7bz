@@ -23,6 +23,7 @@ class Category(models.Model):
     slug = models.SlugField(blank=True)
     image = models.ImageField(upload_to=image_folder, null=True, blank=True)
     parent = models.ForeignKey('self', blank=True, null=True, on_delete=models.SET_NULL)
+    description = models.CharField(max_length=300, blank=True, null=True,)
     def __str__(self):
         return self.name
 
@@ -36,7 +37,7 @@ def pre_save_category_slug(sender, instance, *args, **kwargs):
         instance.slug = slug
 
 
-def pre_save_product_slug(sender, instance, *args, **kwargs):
+def  pre_save_product_slug(sender, instance, *args, **kwargs):
     if not instance.slug:
         slug = slugify(translit(instance.title, reversed=True))
         instance.slug = slug
