@@ -13,3 +13,48 @@ body {
     padding-top: 56px;
   }
 }
+.sb-color-border {
+    border-color: hsla(0,0%,7%,.24);
+}
+ .s-steps__circle {
+    z-index: 2;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 100%;
+    box-sizing: border-box;
+    width: 2px;
+    height: 2px;
+}
+@media screen and (max-width: 639px) {
+    .s-steps__circle {
+        width: 48px;
+        height: 48px;
+        margin-right: 12px;
+    }
+}
+
+@media (min-width: 640px) {
+    .s-steps__circle {
+        width: 64px;
+        height: 64px;
+        margin-right: 32px;
+    }
+}
+
+@media (min-width: 960px) {
+    .s-steps__circle {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+
+
+
