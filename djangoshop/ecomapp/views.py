@@ -27,8 +27,10 @@ def base_view(request):
     categories = Category.objects.all()
     products = Product.objects.all().filter()
     for product in products:
-        e = ProductIMG.objects.get(product=product)
-        product.image = e.img
+        Imgs = ProductIMG.objects.filter(product=product)
+        product.image = '/media/' + Imgs[0].image_thumb
+        logging.info(product.image)
+
     context = {
         'Productions': Productions,
         'categories': categories,

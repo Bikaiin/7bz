@@ -2,22 +2,28 @@
 
 {%block content%}
 <div class="container">
- <div class="row my-4" >
-<div class="col-lg-4">
-    <img src="{{ product.image.url }}" alt="" style="width:300px%; height:300px;">
-    {% for Image in Images %}
-    <img src="{{ Image.img.url }}" alt="" style="width:300px%; height:300px;">
-    {% endfor %}
-</div>
-<div class="col-sm-8">
-    <h3 class="text-centr">{{product.title}}</h3>
-
-    <a href="#"><button class="btn btn-danger">Заказать товар</button></a>
-    <hr>
-    <p>{{ product.description}}</p>
-
-</div>
-</div>
+    <div class="row my-4" >
+        <div class="col-lg-6">
+            <div id="imgHolder">
+                <img src="/media/korobka/korobka_1mhibDF.jpg" alt="" class="img-fluid bigimg" style="image-fluid">
+            </div>
+            <div class="row my-4" >
+                {% for Image in Images %}
+                <div class="col-lg-3 col-md-6  mb-4">
+                    <div class="card h-100 " id="gallery">
+                        <a href="{{ Image.img.url }}"><img class="card-img-top" src="{{Image.get_thumb_image_url}}"  alt=""></a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <h3 class="text-centr">{{product.title}}</h3>
+            <a href="#"><button class="btn btn-danger">Заказать товар</button></a>
+            <hr>
+            <p>{{ product.description}}</p>
+        </div>
+    </div>
 </div>
 
 {%endblock content%}

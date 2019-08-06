@@ -116,7 +116,7 @@
                   {% if forloop.counter == 1 %}
                     <div class="carousel-item active">
 
-                      <img class="d-block img-fluid" src="{{ product.image.url }}" alt="First slide" style="padding-left:125px; height:300px;">
+                      <img class="d-block img-fluid" src="{{ product.Imgs.get_absolute_url }}" alt="First slide" style="padding-left:125px; height:300px;">
                       <div class="carousel-caption d-none d-md-block">
                         <a href="{{product.get_absolute_url}}"><h2>{{ product.title }}</h2></a>
 
@@ -150,7 +150,7 @@
             {% for product in products %}
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="{{ product.image.url }}" alt="" "alt=""></a>
+                <a href="#"><img class="card-img-top" src="{{ product.image}}" alt="" "alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title">
                     <a href="{{product.get_absolute_url}}">{{ product.title }}</a>
@@ -222,6 +222,8 @@
 
   <script src="{% static 'js/jquery.js' %} "></script>
   <script src="{% static 'js/bootstrap.bundle.min.js' %} "></script>
+  <script src="{% static 'js/script.js' %} "></script>
+  <script src="{% static 'js/bootstrap.js' %} "></script>
 
 
 

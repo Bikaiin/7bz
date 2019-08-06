@@ -1,7 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07df74b0-74ec-42c4-aee4-ea8761c71875" name="Default Changelist" comment="" />
+    <list default="true" id="07df74b0-74ec-42c4-aee4-ea8761c71875" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static_in_dev/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoshop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecomapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecomapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecomapp/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecomapp/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecomapp/templates/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecomapp/templates/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecomapp/templates/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecomapp/templates/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecomapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecomapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/1/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/123/123.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/123/123_aYNs1RV.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/asd/asd.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/avav/avav.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/dfgdf/dfgdf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/dfgdf/dfgdf_jEWi2u0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/didzhibuki/didzhibuki.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/ezhednevniki/ezhednevniki.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/fff/Risunok2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/fff/fff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/fff/fff_TQMGhQy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/fff/Без_названия.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/futljary-dlja-knig/futljary-dlja-knig.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/jtsu/jtsu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/kardhoddery/kardhoddery.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/kashirovannaja-korobka-s-magnitnym-klapanom/kashirovannaja-korobka-s-magnitnym-klapanom.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/kashirovannaja-korobka-s-magnitnym-klapanom/kashirovannaja-korobka-s-magnitnym-klapanom.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/kashirovannaja-korobka-s-magnitnym-klapanom/kashirovannaja-korobka-s-magnitnym-klapanom_51acljE.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/kashirovannaja-korobka-s-magnitnym-klapanom/kashirovannaja-korobka-s-magnitnym-klapanom_OG4JqhM.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/kashirovannyj-chemodan-s-lozhementami-dlja-obraztsov-produktsii-rocs/kashirovannyj-chemo_uvaZaLV.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/kashirovannyj-kardpak-na-magnite/kashirovannyj-kardpak-na-magnite.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/kashirovannyj-penal-s-lozhementom-dlja-ganteli/kashirovannyj-penal-s-lozhementom-dlja-ganteli.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/kesh/kesh.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/knigi-i-catalogi-magk/knigi-i-catalogi-magk.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/knigi-v-tvetdom-pereplete/knigi-v-tvetdom-pereplete.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/knigi/knigi.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/knigiicatalogimagk/knigiicatalogimagk.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/knigivtvetdom/knigivtvetdom.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/korobka-chemodan/korobka-chemodan.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/korobka-kryshka-dno-s-vnutrennim-bortom/korobka-kryshka-dno-s-vnutrennim-bortom.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/korobka-kryshka-dno/korobka-kryshka-dno.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/korobka-penal-iz-eko-materialov-x5-retail-group/korobka-penal-iz-eko-materialov-x5-retail-group.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/korobka-penal/korobka-penal.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/korobka/korobka.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/korobka/korobka_Kv1H4nZ.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/korobki-kryshka-dno/korobki-kryshka-dno.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/kruglye-korobki/kruglye-korobki.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/mnogostanichnye-katalogi/mnogostanichnye-katalogi.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/nice-box/nice-box.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/novaja/novaja.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/novaja/novaja.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/novaja/novaja_bnZAaZU.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/novaja/novaja_x8HuMrw.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/one_whore/one_whore.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/papki-i-portfeli/papki-i-portfeli.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/papki-i-portfeli/papki-i-portfeli_CPlx9ys.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/papki-s-koltsevym-mehanizmom/papki-s-koltsevym-mehanizmom.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/papkiiportfeli/papkiiportfeli.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/podarochnaja-korobka-knizhka-skladyvajuschajasja-v-ploskost/podarochnaja-korobka-knizhka_Txah9rY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/podarochnaja-korobka-kryshka-dno-v-eko-stile-dlja-novogodnego-nabora/podarochnaja-korobk_i5L5l8T.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/podarochnaja-korobka-so-stvorkami-dlja-suvenira/podarochnaja-korobka-so-stvorkami-dlja-suvenira.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/podarochnyj-chemodan-s-promezhutochnoj-stranitsej-dlja-vizitki/podarochnyj-chemodan-s-pr_ZDmBPsa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/prezent-box/prezent-box.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/prezentbox/prezentbox.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/promoupakovka-i-velkom-kit/promoupakovka-i-velkom-kit.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shkatulki-na-magnitah/shkatulki-na-magnitah.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/sssddd/sssddd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/zachetka/zachetka.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_in_dev/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_in_dev/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_in_dev/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_in_dev/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_in_dev/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_in_dev/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_in_dev/js/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_in_dev/js/jquery.slim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_in_dev/js/jquery.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_in_dev/js/jquery.slim.min.map" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,22 +92,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ecomapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="71" column="56" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="56" />
+            <state relative-caret-position="326">
+              <caret line="111" column="25" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#639#752#0" />
-                <element signature="e#821#935#0" />
+                <element signature="e#781#1333#0" />
+                <element signature="e#1403#1516#0" />
+                <element signature="e#1586#1700#0" />
+                <element signature="e#1764#1880#0" />
+                <element signature="e#2582#2912#0" />
+                <element signature="e#2845#2912#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample.log">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ecomapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+            <state relative-caret-position="137">
+              <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -37,68 +125,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ecomapp/templates/contacts.html">
+        <entry file="file://$PROJECT_DIR$/ecomapp/templates/category.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="45" />
+            <state relative-caret-position="340">
+              <caret line="23" column="80" selection-start-line="23" selection-start-column="80" selection-end-line="23" selection-end-column="80" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ecomapp/templates/production.html">
+        <entry file="file://$PROJECT_DIR$/djangoshop/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ecomapp/templates/product.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ecomapp/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="44" column="82" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="82" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="680">
+              <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ecomapp/templates/index.html">
+        <entry file="file://$PROJECT_DIR$/ecomapp/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+            <state relative-caret-position="537">
+              <caret line="232" selection-end-line="232" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#3365#3372#1" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ecomapp/urls.py">
+        <entry file="file://$PROJECT_DIR$/static_in_dev/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-              <folding>
-                <element signature="e#1#29#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -128,10 +191,19 @@
       <find>.</find>
       <find>else</find>
       <find>drop</find>
-      <find>get</find>
       <find>shop</find>
+      <find>some</find>
+      <find>fluid</find>
+      <find>card</find>
+      <find>lo</find>
+      <find>logg</find>
+      <find>img</find>
+      <find>get</find>
       <find>pro</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -142,23 +214,28 @@
         <option value="$PROJECT_DIR$/djangoshop/urls.py" />
         <option value="$PROJECT_DIR$/static/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/ecomapp/admin.py" />
-        <option value="$PROJECT_DIR$/ecomapp/templates/category.html" />
-        <option value="$PROJECT_DIR$/ecomapp/models.py" />
-        <option value="$PROJECT_DIR$/ecomapp/templates/product.html" />
         <option value="$PROJECT_DIR$/ecomapp/urls.py" />
-        <option value="$PROJECT_DIR$/ecomapp/views.py" />
         <option value="$PROJECT_DIR$/ecomapp/templates/production.html" />
         <option value="$PROJECT_DIR$/ecomapp/templates/contacts.html" />
-        <option value="$PROJECT_DIR$/ecomapp/templates/base.html" />
         <option value="$PROJECT_DIR$/ecomapp/templates/index.html" />
+        <option value="$PROJECT_DIR$/djangoshop/settings.py" />
+        <option value="$PROJECT_DIR$/ecomapp/templates/product.html" />
+        <option value="$PROJECT_DIR$/static_in_dev/js/script.js" />
+        <option value="$PROJECT_DIR$/ecomapp/views.py" />
+        <option value="$PROJECT_DIR$/sample.log" />
+        <option value="$PROJECT_DIR$/ecomapp/models.py" />
+        <option value="$PROJECT_DIR$/ecomapp/templates/category.html" />
+        <option value="$PROJECT_DIR$/ecomapp/templates/base.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
-    <option name="width" value="972" />
-    <option name="height" value="1048" />
+    <option name="y" value="-8" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -169,6 +246,11 @@
           <expand>
             <path>
               <item name="djangoshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="djangoshop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="djangoshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="djangoshop" type="462c0819:PsiDirectoryNode" />
               <item name="djangoshop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -185,13 +267,13 @@
             <path>
               <item name="djangoshop" type="b2602c69:ProjectViewProjectNode" />
               <item name="djangoshop" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="static_in_dev" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="djangoshop" type="b2602c69:ProjectViewProjectNode" />
               <item name="djangoshop" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="static_in_dev" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -202,6 +284,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -237,9 +320,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20885658" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14120126" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -249,8 +333,8 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33002833" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -290,17 +374,7 @@
     <entry file="file://$PROJECT_DIR$/ecomapp/templates/js/npm.js" />
     <entry file="file://$PROJECT_DIR$/ecomapp/templates/bootstrap.bundle.min.js" />
     <entry file="file://$PROJECT_DIR$/ecomapp/templates/js.js" />
-    <entry file="file://$PROJECT_DIR$/djangoshop/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/shop-homepage.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/djangoshop/settings.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/bootstrap.css" />
@@ -311,29 +385,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ecomapp/templates/category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ecomapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="71" column="56" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#639#752#0" />
-            <element signature="e#821#935#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ecomapp/templates/contacts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="45" />
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -341,36 +396,150 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ecomapp/templates/product.html">
+    <entry file="file://$PROJECT_DIR$/../env/Lib/site-packages/django/core/management/commands/runserver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="198">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="864" selection-start-line="864" selection-end-line="864" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/myproject/Lib/site-packages/django/core/management/commands/runserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/myproject/Lib/site-packages/django/utils/autoreload.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/myproject/Lib/importlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/myproject/Lib/site-packages/django/db/models/fields/files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/myproject/Lib/site-packages/django/forms/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="287" selection-start-line="287" selection-end-line="287" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djangoshop/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/myproject/Lib/site-packages/django/db/models/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="411" selection-start-line="411" selection-end-line="411" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/myproject/Lib/site-packages/django/db/models/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ecomapp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        <state relative-caret-position="136">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="14" />
           <folding>
             <element signature="e#1#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ecomapp/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="107" column="56" selection-start-line="107" selection-start-column="53" selection-end-line="107" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecomapp/templates/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="93" selection-start-line="13" selection-start-column="93" selection-end-line="13" selection-end-column="93" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_in_dev/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecomapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="111" column="25" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#781#1333#0" />
+            <element signature="e#1403#1516#0" />
+            <element signature="e#1586#1700#0" />
+            <element signature="e#1764#1880#0" />
+            <element signature="e#2582#2912#0" />
+            <element signature="e#2845#2912#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecomapp/templates/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="80" selection-start-line="23" selection-start-column="80" selection-end-line="23" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djangoshop/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ecomapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        <state relative-caret-position="137">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -379,19 +548,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ecomapp/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="44" column="82" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="82" />
+        <state relative-caret-position="537">
+          <caret line="232" selection-end-line="232" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3365#3372#1" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ecomapp/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
         </state>
       </provider>
     </entry>
