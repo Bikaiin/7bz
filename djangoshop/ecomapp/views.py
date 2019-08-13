@@ -1,11 +1,15 @@
 from django.shortcuts import render
 from ecomapp.models import Category, Product, Production, ProductIMG
 import logging
+from django.http import JsonResponse
+from django.core import serializers
+
 # Create your views here.
 logging.basicConfig(filename="sample.log", level=logging.INFO)
 
 def index_view(request):
     place_on_page_1_filter = Category.objects.get(place_on_page = "1")
+    logging.info(place_on_page_1_filter)
     place_on_page_2_filter = Category.objects.get(place_on_page = "2")
     Productions = Production.objects.all()
     products = Product.objects.all().filter()
@@ -24,7 +28,7 @@ def index_view(request):
 
 def base_view(request):
     Productions = Production.objects.all()
-    categories = Category.objects.all()
+    categories = Category.objects.exclude(parent=None)
     products = Product.objects.all().filter()
     for product in products:
         Imgs = ProductIMG.objects.filter(product=product)
@@ -70,8 +74,8 @@ def category_view(request, category_slug):
     category = Category.objects.get(slug=category_slug)
     products_of_category = Product.objects.all().filter(category=category)
     for product in products_of_category:
-        e = ProductIMG.objects.get(product=product)
-        product.image = e.img
+        e = ProductIMG.objects.filter(product=product)
+        product.image = e[0].img
     context = {
         'all_category': all_category,
         'category': category,
@@ -80,6 +84,28 @@ def category_view(request, category_slug):
     }
     return render(request, 'category.html', context)
 
+def category_json(request, category_slug):
+    if category_slug == "all":
+        products_of_category = Product.objects.all()
+    else:
+        category = Category.objects.get(slug=category_slug)
+        products_of_category = Product.objects.all().filter(category=category)
+    response_data = {}
+    responce_records =[]
+
+    for product in products_of_category:
+        e = ProductIMG.objects.filter(product=product)
+        pruduct_title = product.title
+        product_description = product.description
+        product_image_path = '/media/' + e[0].image_thumb.replace("\\","/")
+        record = {"title":pruduct_title, "description":product_description,"image_path":product_image_path }
+        responce_records.append(record)
+
+    response_data = responce_records
+
+    return JsonResponse({'data':response_data})
+
+
 def contacts_view(request):
     Productions = Production.objects.all()
     context = {
@@ -87,3 +113,5 @@ def contacts_view(request):
         'Productions': Productions
     }
     return render(request, 'contacts.html', context)
+
+
