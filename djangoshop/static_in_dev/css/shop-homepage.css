@@ -93,3 +93,31 @@ body {
         left: 40px;
     }
 }
+
+
+@media screen and (min-width: 1200px){
+    .sb-hidden-desktop-lg-min {
+        display: none!important;
+    }
+}
+
+@media screen and (max-width: 1199px){
+    .sb-hidden-desktop {
+        display: none!important;
+    }
+}
+.treple-img-container {
+    width: 100%;
+    padding: 2.9rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+.pt-7_5{
+    padding-top: 7.5rem !important;
+}
+.w-100{
+    min-width:100%;
+}
+.navbar-nav li:hover>.dropdown-menu {
+  display: block;
+}

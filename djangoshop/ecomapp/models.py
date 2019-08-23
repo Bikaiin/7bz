@@ -39,8 +39,12 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+
     def get_absolute_url(self):
-        return reverse('category', kwargs={'category_slug': self.slug})
+        url = "/shop/?category=" + self.slug
+        return url
+
+
 
 def pre_save_category_slug(sender, instance, *args, **kwargs):
 

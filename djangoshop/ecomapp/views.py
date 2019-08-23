@@ -2,6 +2,7 @@ from django.shortcuts import render
 from ecomapp.models import Category, Product, Production, ProductIMG
 import logging
 from django.http import JsonResponse
+
 from django.core import serializers
 
 # Create your views here.
@@ -27,6 +28,8 @@ def index_view(request):
     return render(request, 'index.html', context)
 
 def base_view(request):
+
+
     Productions = Production.objects.all()
     categories = Category.objects.exclude(parent=None)
     products = Product.objects.all().filter()
@@ -40,7 +43,7 @@ def base_view(request):
         'categories': categories,
         'products': products
     }
-    return render(request, 'base.html', context)
+    return render(request, 'shop.html', context)
 
 
 def product_view(request, product_slug):
@@ -90,8 +93,8 @@ def category_json(request, category_slug):
     else:
         category = Category.objects.get(slug=category_slug)
         products_of_category = Product.objects.all().filter(category=category)
-    response_data = {}
-    responce_records =[]
+
+    responce_data =[]
 
     for product in products_of_category:
         e = ProductIMG.objects.filter(product=product)
@@ -99,11 +102,11 @@ def category_json(request, category_slug):
         product_description = product.description
         product_image_path = '/media/' + e[0].image_thumb.replace("\\","/")
         record = {"title":pruduct_title, "description":product_description,"image_path":product_image_path }
-        responce_records.append(record)
+        responce_data.append(record)
 
-    response_data = responce_records
 
-    return JsonResponse({'data':response_data})
+
+    return JsonResponse({'data':responce_data})
 
 
 def contacts_view(request):
@@ -114,4 +117,68 @@ def contacts_view(request):
     }
     return render(request, 'contacts.html', context)
 
+def category_view(request, category_slug):
+    categories = Category.objects.exclude(parent=None)
+    products = Product.objects.all().filter()
+    for product in products:
+        Imgs = ProductIMG.objects.filter(product=product)
+        product.image = '/media/' + Imgs[0].image_thumb
+        logging.info(product.image)
 
+    context = {
+        'categories': categories,
+        'products': products
+    }
+    return render(request, 'base.html', context)
+
+def shop_view(request, category_slug):
+    categories = Category.objects.exclude(parent=None)
+    category = Category.objects.get(slug=category_slug)
+    products_of_category = Product.objects.all().filter(category=category)
+    for product in products_of_category:
+        Imgs = ProductIMG.objects.filter(product=product)
+        product.image = '/media/' + Imgs[0].image_thumb
+        logging.info(product.image)
+    context = {
+        'categories': categories,
+        'products': products_of_category
+    }
+
+    return render(request, 'shop.html', context)
+def uslugi_view(request):
+
+    return render(request, 'uslugi.html')
+
+
+def newshop(request):
+    req_category = request.GET.get("category", "all")
+    if req_category == "all":
+        products_of_category = Product.objects.all()
+    else:
+        category = Category.objects.get(slug=req_category)
+        products_of_category = Product.objects.all().filter(category=category)
+
+    for product in products_of_category:
+        img = ProductIMG.objects.filter(product=product)
+        product.image = '/media/' + img[0].image_thumb.replace("\\", "/")
+
+    if request.is_ajax():
+
+        responce_data = []
+        for product in products_of_category:
+
+            pruduct_title = product.title
+            product_description = product.description
+            product_image_path = product.image
+            record = {"title": pruduct_title, "description": product_description, "image_path": product_image_path}
+            responce_data.append(record)
+
+        return JsonResponse({'data': responce_data})
+    else:
+        categories = Category.objects.exclude(parent=None)
+
+        context = {
+            'categories': categories,
+            'products': products_of_category,
+        }
+        return render(request, 'shop.html', context)

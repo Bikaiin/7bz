@@ -32,32 +32,45 @@
           <ul class="navbar-nav ml-auto">
 
             <li class="nav-item ">
-              <a class="nav-link" href="/shop">Продукция
+              <a class="nav-link open_shop" href="/shop/?category=all">Продукция
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-
-
-
-
-             <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Производство</a>
-                  <div class="dropdown-menu">
-                    {% for Production in Productions %}
-                    <a class="dropdown-item" href="{{Production.get_absolute_url}}">{{ Production.title }}</a>
-                    {% endfor %}
-                  </div>
-             </li>
+              <li class="nav-item ">
+              <a class="nav-link" href="/uslugi">Услуги
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+              <li class="nav-item ">
+              <a class="nav-link" href="/contacts">Адресс
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+               <li class="nav-item ">
+              <a class="nav-link" href="mailto:nfo@7bz.ru">info@7bz.ru
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+               <li class="nav-item ">
+              <a class="nav-link" href="tel:+74959716840">+7(495)971-68-40
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+              <li class="nav-item ">
+              <a class="nav-link" href="tel:+74959235693">+7(495)923-56-93
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+<!--
             <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">Контакты</a>
+                  <a class="nav-link dropdown-toggle"  data-hover="dropdown" href="/contacts" role="button" aria-haspopup="true" aria-expanded="false">Контакты</a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/contacts">Мы на карте</a>
                     <a class="dropdown-item" href="mailto:nfo@7bz.ru">info@7bz.ru</a>
                     <a class="dropdown-item" href="tel:+74959716840">+7(495)971-68-40</a>
                     <a class="dropdown-item" href="tel:+74959235693">+7(495)923-56-93</a>
 
                   </div>
-             </li>
+             </li> -->
 
           </ul>
         </div>
@@ -82,55 +95,12 @@
 
     {%block content%}
     <!-- Page Content -->
-    <div class="container mt-4">
 
-      <div class="row mt-4">
-
-        <div class="col-lg-3">
-          <div class="list-group" id="category">
-              <a href="/shop/category/all/" class="list-group-item" id="category" >Все</a>
-              {% for category in categories %}
-              <a href="{{category.get_absolute_url}}" class="list-group-item" >{{ category.name }}</a>
-              {% endfor %}
-          </div>
-
-        </div>
-        <!-- /.col-lg-3 -->
-
-        <div class="col-lg-9" >
-
-
-          <div class="row" id="product_list" >
-
-            {% for product in products %}
-            <div class="col-lg-4 col-md-6 mb-4" >
-              <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="{{ product.image}}" alt="" "alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="{{product.get_absolute_url}}">{{ product.title }}</a>
-                  </h4>
-
-
-                </div>
-              </div>
-            </div>
-           {% endfor %}
-          </div>
-          <!-- /.row -->
-
-        </div>
-        <!-- /.col-lg-9 -->
-
-      </div>
-      <!-- /.row -->
-
-    </div>
     {% endblock content%}
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-2 footer mt-auto">
+    <footer class="py-2 pt-5 footer mt-auto">
       <hr>
       <div class="container">
 <div class="row">
