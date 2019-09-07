@@ -4,15 +4,9 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
  */
 
-body {
-  padding-top: 54px;
-}
 
-@media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
-}
+
+
 .sb-color-border {
     border-color: hsla(0,0%,7%,.24);
 }

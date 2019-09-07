@@ -25,7 +25,7 @@ def index_view(request):
         'place_on_page_2': place_on_page_2
     }
 
-    return render(request, 'index.html', context)
+    return render(request, '__index.html', context)
 
 def base_view(request):
 
@@ -43,7 +43,7 @@ def base_view(request):
         'categories': categories,
         'products': products
     }
-    return render(request, 'shop.html', context)
+    return render(request, '__shop.html', context)
 
 
 def product_view(request, product_slug):
@@ -56,7 +56,7 @@ def product_view(request, product_slug):
         'Productions': Productions,
         'Images': Imgs
     }
-    return render(request, 'product.html', context)
+    return render(request, '__product.html', context)
 
 def production_view(request, production_slug):
     Productions = Production.objects.all()
@@ -144,7 +144,7 @@ def shop_view(request, category_slug):
         'products': products_of_category
     }
 
-    return render(request, 'shop.html', context)
+    return render(request, '__shop.html', context)
 def uslugi_view(request):
 
     return render(request, 'uslugi.html')
@@ -181,4 +181,8 @@ def newshop(request):
             'categories': categories,
             'products': products_of_category,
         }
-        return render(request, 'shop.html', context)
+        return render(request, '__shop.html', context)
+
+def services(request):
+
+    return render(request, '__services.html', {})
