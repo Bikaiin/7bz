@@ -10,7 +10,6 @@ logging.basicConfig(filename="sample.log", level=logging.INFO)
 
 def index_view(request):
     place_on_page_1_filter = Category.objects.get(place_on_page = "1")
-    logging.info(place_on_page_1_filter)
     place_on_page_2_filter = Category.objects.get(place_on_page = "2")
     Productions = Production.objects.all()
     products = Product.objects.all().filter()
@@ -25,7 +24,7 @@ def index_view(request):
         'place_on_page_2': place_on_page_2
     }
 
-    return render(request, '__index.html', context)
+    return render(request, 'index.html', context)
 
 def base_view(request):
 
@@ -43,7 +42,7 @@ def base_view(request):
         'categories': categories,
         'products': products
     }
-    return render(request, '__shop.html', context)
+    return render(request, 'shop.html', context)
 
 
 def product_view(request, product_slug):
@@ -56,36 +55,9 @@ def product_view(request, product_slug):
         'Productions': Productions,
         'Images': Imgs
     }
-    return render(request, '__product.html', context)
-
-def production_view(request, production_slug):
-    Productions = Production.objects.all()
-    product = Production.objects.get(slug=production_slug)
-    logging.info(product.image)
-    context = {
-        'product': product,
-        'Productions': Productions,
-
-    }
-    return render(request, 'production.html', context)
+    return render(request, 'product.html', context)
 
 
-
-def category_view(request, category_slug):
-    Productions = Production.objects.all()
-    all_category = Category.objects.all()
-    category = Category.objects.get(slug=category_slug)
-    products_of_category = Product.objects.all().filter(category=category)
-    for product in products_of_category:
-        e = ProductIMG.objects.filter(product=product)
-        product.image = e[0].img
-    context = {
-        'all_category': all_category,
-        'category': category,
-        'products_of_category': products_of_category,
-        'Productions': Productions
-    }
-    return render(request, 'category.html', context)
 
 def category_json(request, category_slug):
     if category_slug == "all":
@@ -109,27 +81,7 @@ def category_json(request, category_slug):
     return JsonResponse({'data':responce_data})
 
 
-def contacts_view(request):
-    Productions = Production.objects.all()
-    context = {
 
-        'Productions': Productions
-    }
-    return render(request, 'contacts.html', context)
-
-def category_view(request, category_slug):
-    categories = Category.objects.exclude(parent=None)
-    products = Product.objects.all().filter()
-    for product in products:
-        Imgs = ProductIMG.objects.filter(product=product)
-        product.image = '/media/' + Imgs[0].image_thumb
-        logging.info(product.image)
-
-    context = {
-        'categories': categories,
-        'products': products
-    }
-    return render(request, 'base.html', context)
 
 def shop_view(request, category_slug):
     categories = Category.objects.exclude(parent=None)
@@ -144,10 +96,7 @@ def shop_view(request, category_slug):
         'products': products_of_category
     }
 
-    return render(request, '__shop.html', context)
-def uslugi_view(request):
-
-    return render(request, 'uslugi.html')
+    return render(request, 'shop.html', context)
 
 
 def newshop(request):
@@ -168,21 +117,27 @@ def newshop(request):
         for product in products_of_category:
 
             pruduct_title = product.title
-            product_description = product.description
+            product_slug = '/shop/product/'+product.slug
             product_image_path = product.image
-            record = {"title": pruduct_title, "description": product_description, "image_path": product_image_path}
+            record = {"title": pruduct_title, "slug": product_slug, "image_path": product_image_path}
             responce_data.append(record)
 
         return JsonResponse({'data': responce_data})
     else:
         categories = Category.objects.exclude(parent=None)
+        cat_1_filter = Category.objects.get(place_on_page="1")
+        cat_2_filter = Category.objects.get(place_on_page="2")
+        cat_1 = Category.objects.all().filter(parent=cat_1_filter)
+        cat_2 = Category.objects.all().filter(parent=cat_2_filter)
 
         context = {
+            'cat_1': cat_1,
+            'cat_2': cat_2,
             'categories': categories,
             'products': products_of_category,
         }
-        return render(request, '__shop.html', context)
+        return render(request, 'shop.html', context)
 
 def services(request):
 
-    return render(request, '__services.html', {})
+    return render(request, 'services.html', {})

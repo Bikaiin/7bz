@@ -1,0 +1,65 @@
+{% extends 'base.html'%}
+{% load static %}
+{%block content%}
+<div class="container mt-4">
+
+    <div class="row mt-4">
+        {%block category_list%}
+        <div class="d-lg-none col-md-12">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title line">
+                            <p class="kp collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false">Категории</p>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse in collapse category_collapse" style="">
+                        <div class="list-group" id="category">
+                            <a href="/shop/?category=all" class="list-group-item list-group-item-action" id="category" >Все</a>
+                            {% for category in categories %}
+                            <a href="{{category.get_absolute_url}}" class="list-group-item list-group-item-action" >{{ category.name }}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 category_menu">
+            <div class="list-group" id="category">
+                <a href="/shop/?category=all" class="list-group-item list-group-item-action" id="category" >Все</a>
+                {% for category in categories %}
+                <a href="{{category.get_absolute_url}}" class="list-group-item list-group-item-action" >{{ category.name }}</a>
+                {% endfor %}
+            </div>
+        </div>
+        {%endblock category_list%}
+        <!-- /.col-lg-3 -->
+        {%block product_list%}
+        <div class="col-lg-9" >
+            <div class="row" id="product_list" >
+                {% for product in products %}
+                <div class=" col-12 col-md-6 col-lg-4 dk-isotope-grid-item mockups">
+                    <div class="card h-100">
+                        <a class="dk-portfolio-item dk-portfolio-item-style-2 dk-portfolio-item-light" href="{{product.get_absolute_url}}">
+                            <span class="dk-portfolio-item-image">
+                                <span class="dk-portfolio-item-image-size" data-portfolio-size="90%"></span>
+                                <span class="dk-portfolio-item-overlay" style="background-color: rgba(255, 255, 255, .35)"></span>
+                                <img src="{{ product.image}}"  alt="">
+                                <span class="dk-portfolio-item-info">
+                                    <a class="text-dark" href="{{product.get_absolute_url}}"><h2 class="h3 dk-portfolio-item-title">{{ product.title }}</h2></a>
+                                </span>
+                        </a>
+                    </div>
+                </div>
+
+
+                {% endfor %}
+            </div>
+            <!-- /.row -->
+        </div>
+        {%endblock product_list%}
+        <!-- /.col-lg-9 -->
+    </div>
+    <!-- /.row -->
+</div>
+{%endblock content%}

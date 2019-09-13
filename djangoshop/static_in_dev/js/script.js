@@ -10,9 +10,12 @@ $(document).ready(function(){
         scrValue = $(this).attr('href');
         $('img.bigimg').attr('src', scrValue)
     })
+    /*
     $('#category a').on('click',function(e){
         e.preventDefault();
-        path = domain + $(this).attr('href');
+        my_ref = $(this).attr('href');
+        path = domain + my_ref ;
+        console.log(path );
         $('#product_list').empty();
         var settings = {
 		    async: true,
@@ -30,17 +33,38 @@ $(document).ready(function(){
 	    $.ajax(settings).done(function (response){
 
 	        console.log(response.data );
-	        history.pushState(null, null, path);
+
 	        items = response.data
 	        $.each(items, function(index, value){
-
-                var html = '<div class="col-lg-4 col-md-6 mb-4"><div class="card h-100"><a href="#"><img class="card-img-top" src="'+value.image_path +'" alt="" "alt=""></a><div class="card-body"><h4 class="card-title"><a href="'+'#'+'">'+value.title+'</a></h4></div></div></div>';
-
+                var html = '<div class=" col-12 col-md-6 col-lg-4 dk-isotope-grid-item mockups"><div class="card h-100"><a class="dk-portfolio-item dk-portfolio-item-style-2 dk-portfolio-item-light" href="'+value.slug+'"><span class="dk-portfolio-item-image"><span class="dk-portfolio-item-image-size" data-portfolio-size="90%"></span><span class="dk-portfolio-item-overlay" style="background-color: rgba(255, 255, 255, .35)"></span><img src="'+value.image_path+'"  alt=""><span class="dk-portfolio-item-info"><a class="text-dark" href="'+value.slug+'"><h2 class="h3 dk-portfolio-item-title">'+value.title+'</h2></a></span></a></div></div>'
                 $('#product_list').append(html);
 	        })
 
+	        $('#collapse1').removeClass('show');
+	        try {
+
+                history.pushState(null, null, path);
+                return;
+            } catch(e) {}
+            ocation.hash =  path;
+
 	    })
     })
+    */
+    var btn = $('#button');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+        } else {
+        btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+    });
 
 
 })
