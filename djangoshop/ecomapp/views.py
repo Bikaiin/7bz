@@ -110,7 +110,7 @@ def newshop(request):
     for product in products_of_category:
         img = ProductIMG.objects.filter(product=product)
         product.image = '/media/' + img[0].image_thumb.replace("\\", "/")
-
+    '''
     if request.is_ajax():
 
         responce_data = []
@@ -124,20 +124,15 @@ def newshop(request):
 
         return JsonResponse({'data': responce_data})
     else:
-        categories = Category.objects.exclude(parent=None)
-        cat_1_filter = Category.objects.get(place_on_page="1")
-        cat_2_filter = Category.objects.get(place_on_page="2")
-        cat_1 = Category.objects.all().filter(parent=cat_1_filter)
-        cat_2 = Category.objects.all().filter(parent=cat_2_filter)
+    '''
 
-        context = {
-            'cat_1': cat_1,
-            'cat_2': cat_2,
-            'categories': categories,
-            'products': products_of_category,
-        }
-        return render(request, 'shop.html', context)
+    categories = Category.objects.exclude(parent=None)
+
+    context = {
+        'categories': categories,
+        'products': products_of_category,
+    }
+    return render(request, 'shop.html', context)
 
 def services(request):
-
     return render(request, 'services.html', {})
