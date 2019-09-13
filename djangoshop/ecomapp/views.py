@@ -98,7 +98,7 @@ def shop_view(request, category_slug):
 
     return render(request, 'shop.html', context)
 
-
+'''
 def newshop(request):
     req_category = request.GET.get("category", "all")
     if req_category == "all":
@@ -110,7 +110,7 @@ def newshop(request):
     for product in products_of_category:
         img = ProductIMG.objects.filter(product=product)
         product.image = '/media/' + img[0].image_thumb.replace("\\", "/")
-    '''
+    
     if request.is_ajax():
 
         responce_data = []
@@ -124,15 +124,53 @@ def newshop(request):
 
         return JsonResponse({'data': responce_data})
     else:
-    '''
+        
+        categories = Category.objects.exclude(parent=None)
 
+        context = {
+            'categories': categories,
+            'products': products_of_category,
+        }
+        return render(request, 'shop.html', context)
+'''
+
+
+def shop(request):
+    req_category = request.GET.get("category", "all")
+    if req_category == "all":
+        products_of_category = Product.objects.all()
+        logging.info(req_category)
+    else:
+        logging.info(req_category)
+        category = Category.objects.get(slug=req_category)
+        products_of_category = Product.objects.all().filter(category=category)
+
+    for product in products_of_category:
+        img = ProductIMG.objects.filter(product=product)
+        product.image = '/media/' + img[0].image_thumb.replace("\\", "/")
+    '''
+    if request.is_ajax():
+
+        responce_data = []
+        for product in products_of_category:
+            pruduct_title = product.title
+            product_slug = '/shop/product/' + product.slug
+            product_image_path = product.image
+            record = {"title": pruduct_title, "slug": product_slug, "image_path": product_image_path}
+            responce_data.append(record)
+
+        return JsonResponse({'data': responce_data})
+    else:
+    '''
     categories = Category.objects.exclude(parent=None)
 
     context = {
         'categories': categories,
         'products': products_of_category,
     }
+    logging.info(context)
     return render(request, 'shop.html', context)
 
 def services(request):
+
     return render(request, 'services.html', {})
