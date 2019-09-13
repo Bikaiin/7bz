@@ -15,7 +15,7 @@
                     </div>
                     <div id="collapse1" class="panel-collapse in collapse category_collapse" style="">
                         <div class="list-group" id="category">
-                            <a href="/shop/?category=all" class="list-group-item list-group-item-action" id="category" >Все</a>
+                            <a href="/shop/all" class="list-group-item list-group-item-action" id="category" >Все</a>
                             {% for category in categories %}
                             <a href="{{category.get_absolute_url}}" class="list-group-item list-group-item-action" >{{ category.name }}</a>
                             {% endfor %}

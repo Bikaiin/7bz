@@ -135,14 +135,11 @@ def newshop(request):
 '''
 
 
-def shop(request):
-    req_category = request.GET.get("category", "all")
-    if req_category == "all":
+def shop(request, category_slug):
+    if category_slug == "all":
         products_of_category = Product.objects.all()
-        logging.info(req_category)
     else:
-        logging.info(req_category)
-        category = Category.objects.get(slug=req_category)
+        category = Category.objects.get(slug=category_slug)
         products_of_category = Product.objects.all().filter(category=category)
 
     for product in products_of_category:

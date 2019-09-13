@@ -10,6 +10,7 @@ $(document).ready(function(){
         scrValue = $(this).attr('href');
         $('img.bigimg').attr('src', scrValue)
     })
+    $('.carousel-item:first').addClass('active')
     /*
     $('#category a').on('click',function(e){
         e.preventDefault();

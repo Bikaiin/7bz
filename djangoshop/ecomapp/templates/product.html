@@ -3,7 +3,38 @@
 {%block content%}
 <div class="container">
     <div class="row my-4" >
-        <div class="col-lg-6">
+        <div class="d-lg-none col-md-12">
+            <div class="container text-center">
+		<h1 style="text-align: left;">Коробки крышка-дно<br></h1>
+		<div id="carousel" class="carousel slide carousel-fade d-block mx-auto" data-ride="carousel">
+			<!-- Индикаторы -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel" data-slide-to="1"></li>
+				<li data-target="#carousel" data-slide-to="2"></li>
+			</ol>
+
+			<div class="carousel-inner">
+                {% for Image in Images %}
+				<div  class="carousel-item ">
+					<img class="img-fluid" src="{{ Image.img.url }}" alt="...">
+				</div>
+                {% endfor %}
+			</div>
+
+			<!-- Элементы управления -->
+			<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Предыдущий</span>
+			</a>
+			<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Следующий</span>
+			</a>
+		</div>
+	</div>
+        </div>
+        <div class="col-lg-6 category_menu">
             <div id="imgHolder">
                 <img src="" alt="" class="img-fluid bigimg" style="image-fluid">
             </div>

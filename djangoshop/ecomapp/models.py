@@ -41,7 +41,7 @@ class Category(models.Model):
 
 
     def get_absolute_url(self):
-        url = "/shop/?category=" + self.slug
+        url = "/shop/" + self.slug
         return url
 
 
