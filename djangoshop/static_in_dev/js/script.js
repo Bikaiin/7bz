@@ -8,7 +8,9 @@ $(document).ready(function(){
         e.preventDefault();
 
         scrValue = $(this).attr('href');
-        $('img.bigimg').attr('src', scrValue)
+        $('img.bigimg').fadeOut("fast")
+        $('img.bigimg').attr('src', scrValue);
+        $('img.bigimg').fadeIn("fast")
     })
     $('.carousel-item:first').addClass('active')
     /*
