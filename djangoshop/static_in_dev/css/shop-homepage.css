@@ -86,8 +86,3 @@
         left: 40px;
     }
 }
-@media (max-width: 991.5px ){
-    .category_menu{
-    display: none !important;
-    }
-}

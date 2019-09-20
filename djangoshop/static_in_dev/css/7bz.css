@@ -5098,8 +5098,11 @@ div.dk-navbar-fullscreen.dk-navbar-fullscreen.dk-open-fullscreen .dk-navbar-burg
 
 .dk-box-2 {
     padding: 40px 0 40px;
-}
 
+}
+.dk-box-2-col{
+	background-color: #686860;
+}
 .dk-box-2.dk-padding-top {
     padding: 110px 0 0;
 }
@@ -6520,4 +6523,56 @@ button:focus {
 	padding-left: 20px;
     padding-right: 20px;
 }
+@media (max-width: 1199px) and (min-width: 990px){
+	.hidden_element_1 {
+		display: none!important;
+	}	
+	.text-h6-3{
+		display: inline-block;
+		width: 45%;
+	}
+	.text-h6-1{
+		display: inline-block;
+		width: 60%;
+	}
+	.btn-wid{
+		display: inline-block;
+		width: 30%;
+	}
+	.btn-pad-1{
+		padding-top: 25px;
+	}
+	.btn-pad-2{
+		padding-top: 5px;
+	}
+	.btn-pad-3{
+		padding-top: 26px;
+	}
+}
+@media (min-width: 1200px){
+	.hidden_element_2 {
+		display: none!important;
+	}
+}
+@media (max-width: 990px){
+	.hidden_element_2 {
+		display: none!important;
+	}
+}
 
+.img-element{
+	width: 220px;
+}
+.pad{
+	padding-left: 0;
+	padding-right: 0;
+}
+.pad_text{
+	padding-left: 30px;
+
+}
+@media (max-width: 991px){
+	.hidden_element_3 {
+		display: none!important;
+	}
+}
